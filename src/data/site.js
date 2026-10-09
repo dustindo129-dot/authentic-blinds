@@ -38,7 +38,7 @@ export const financing = {
   blurb:
     'Now offering financing through Synchrony with 0% interest if paid in full within 18 months. Start your application after your in-home consultation.',
   applyUrl: 'https://www.synchrony.com/mmc/P1222100802',
-  applyLabel: 'Start Your Application',
+  applyLabel: 'Click Here',
 };
 
 export const services = [
