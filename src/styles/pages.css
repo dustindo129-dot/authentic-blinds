@@ -5,7 +5,7 @@
   position: relative;
   color: #fff;
   background: linear-gradient(rgba(21, 40, 56, 0.72), rgba(21, 40, 56, 0.82)),
-    url('/images/hero.svg') center / cover no-repeat;
+    url('/images/photos/hero.jpg') center / cover no-repeat;
   background-color: var(--color-primary-dark);
 }
 

@@ -37,8 +37,7 @@ export const nav = [
 export const financing = {
   blurb:
     'Now offering financing through Synchrony with 0% interest if paid in full within 18 months. Start your application after your in-home consultation.',
-  // TODO: replace with the real Synchrony application URL from the client.
-  applyUrl: 'https://www.synchrony.com/',
+  applyUrl: 'https://www.synchrony.com/mmc/P1222100802',
   applyLabel: 'Start Your Application',
 };
 
@@ -46,7 +45,7 @@ export const services = [
   {
     slug: 'roller-shades',
     title: 'Roller Shades',
-    image: '/images/service-roller-shades.svg',
+    image: '/images/photos/roller-shade-zebra.webp',
     summary:
       'Sleek, modern roller shades that filter light beautifully and give any room a clean, contemporary finish.',
     intro:
@@ -62,7 +61,7 @@ export const services = [
   {
     slug: 'plantation-shutters',
     title: 'Plantation Shutters',
-    image: '/images/service-plantation-shutters.svg',
+    image: '/images/photos/shutters-arched.jpg',
     summary:
       'Timeless plantation shutters that add lasting value, elegance, and precise light control to your home.',
     intro:
@@ -78,7 +77,7 @@ export const services = [
   {
     slug: 'window-blinds',
     title: 'Window Blinds',
-    image: '/images/service-window-blinds.svg',
+    image: '/images/photos/blinds-faux-wood.jpg',
     summary:
       'Affordable, functional blinds that enhance privacy, filter light, and complement any décor.',
     intro:
@@ -103,10 +102,10 @@ export const whoWeServe = [
 
 // Our Work gallery. Replace the placeholder SVGs with real project photos.
 export const gallery = [
-  { src: '/images/work-1.svg', alt: 'Plantation shutters installed in a living room' },
-  { src: '/images/work-2.svg', alt: 'Roller shades in a modern kitchen' },
-  { src: '/images/work-3.svg', alt: 'Window blinds in a bedroom' },
-  { src: '/images/work-4.svg', alt: 'Shutters on large patio doors' },
-  { src: '/images/work-5.svg', alt: 'Roller shades in a home office' },
-  { src: '/images/work-6.svg', alt: 'Blinds in a dining room' },
+  { src: '/images/photos/hero.jpg', alt: 'Plantation shutters filling a bright sunroom' },
+  { src: '/images/photos/shutters-arched.jpg', alt: 'Arched plantation shutters in a living room' },
+  { src: '/images/photos/shutters-entry.jpg', alt: 'Plantation shutter sidelights framing a front entry' },
+  { src: '/images/photos/shutters-sunroom.jpg', alt: 'Plantation shutters across a sunroom with a view' },
+  { src: '/images/photos/roller-shade-zebra.webp', alt: 'Black zebra cordless roller shade' },
+  { src: '/images/photos/blinds-faux-wood.jpg', alt: 'White faux wood window blinds' },
 ];
