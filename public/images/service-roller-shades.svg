@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Roller shades">
+  <rect width="800" height="600" fill="#eef2f5"/>
+  <rect x="140" y="80" width="520" height="440" rx="6" fill="#1f3a52"/>
+  <rect x="164" y="104" width="472" height="392" fill="#f4e6c8"/>
+  <rect x="150" y="80" width="500" height="70" fill="#2a4a66"/>
+  <rect x="164" y="104" width="472" height="210" fill="#cdb78f"/>
+  <rect x="164" y="314" width="472" height="12" fill="#1f3a52"/>
+  <line x1="400" y1="326" x2="400" y2="356" stroke="#1f3a52" stroke-width="4"/>
+  <circle cx="400" cy="360" r="7" fill="#c9a66b"/>
+</svg>

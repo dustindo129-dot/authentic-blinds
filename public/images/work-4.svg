@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Shutters on large patio doors">
+  <rect width="800" height="600" fill="#e3ddd1"/>
+  <rect x="0" y="500" width="800" height="100" fill="#c7b89a"/>
+  <rect x="140" y="70" width="520" height="430" fill="#ffffff" stroke="#1f3a52" stroke-width="12"/>
+  <rect x="397" y="82" width="6" height="406" fill="#1f3a52"/>
+  <g fill="#f4efe4" stroke="#c9a66b" stroke-width="2">
+    <rect x="160" y="96" width="228" height="24"/><rect x="160" y="130" width="228" height="24"/>
+    <rect x="160" y="164" width="228" height="24"/><rect x="160" y="198" width="228" height="24"/>
+    <rect x="160" y="232" width="228" height="24"/><rect x="160" y="266" width="228" height="24"/>
+    <rect x="160" y="300" width="228" height="24"/><rect x="160" y="334" width="228" height="24"/>
+    <rect x="160" y="368" width="228" height="24"/><rect x="160" y="402" width="228" height="24"/>
+    <rect x="160" y="436" width="228" height="24"/>
+    <rect x="412" y="96" width="228" height="24"/><rect x="412" y="130" width="228" height="24"/>
+    <rect x="412" y="164" width="228" height="24"/><rect x="412" y="198" width="228" height="24"/>
+    <rect x="412" y="232" width="228" height="24"/><rect x="412" y="266" width="228" height="24"/>
+    <rect x="412" y="300" width="228" height="24"/><rect x="412" y="334" width="228" height="24"/>
+    <rect x="412" y="368" width="228" height="24"/><rect x="412" y="402" width="228" height="24"/>
+    <rect x="412" y="436" width="228" height="24"/>
+  </g>
+</svg>

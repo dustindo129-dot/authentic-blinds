@@ -1,0 +1,23 @@
+{
+  "name": "authentic-blinds",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Authentic Blinds & Shutters - window treatments in the DFW Metroplex. Next.js rebuild (moved off WordPress).",
+  "author": "Authentic Blinds & Shutters",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "dev": "next dev -p 5174",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.15",
+    "nodemailer": "^6.9.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

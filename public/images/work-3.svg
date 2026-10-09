@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Window blinds in a bedroom">
+  <rect width="800" height="600" fill="#dfe4e8"/>
+  <rect x="0" y="450" width="800" height="150" fill="#b9a98c"/>
+  <rect x="210" y="90" width="380" height="360" rx="4" fill="#1f3a52"/>
+  <rect x="232" y="112" width="336" height="316" fill="#f4e6c8"/>
+  <g fill="#d8c89c" stroke="#b79f6f" stroke-width="1">
+    <rect x="232" y="118" width="336" height="16"/><rect x="232" y="146" width="336" height="16"/>
+    <rect x="232" y="174" width="336" height="16"/><rect x="232" y="202" width="336" height="16"/>
+    <rect x="232" y="230" width="336" height="16"/><rect x="232" y="258" width="336" height="16"/>
+    <rect x="232" y="286" width="336" height="16"/><rect x="232" y="314" width="336" height="16"/>
+    <rect x="232" y="342" width="336" height="16"/><rect x="232" y="370" width="336" height="16"/>
+    <rect x="232" y="398" width="336" height="16"/>
+  </g>
+  <rect x="150" y="470" width="500" height="70" rx="10" fill="#ffffff"/>
+</svg>
