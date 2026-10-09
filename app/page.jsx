@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import ServiceCard from '@/components/ServiceCard';
-import FinancingBanner from '@/components/FinancingBanner';
-import { site, services, whoWeServe } from '@/data/site';
+import { site, services, whoWeServe, financing } from '@/data/site';
 
 export default function HomePage() {
   return (
@@ -10,20 +9,40 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero__overlay" />
         <div className="container hero__inner">
-          <p className="hero__eyebrow">{site.subTagline}</p>
-          <h1 className="hero__title">{site.tagline}</h1>
-          <p className="hero__lead">
-            Decorative yet functional window treatments — blinds, shutters, and roller
-            shades — locally manufactured for homes across the Dallas–Fort Worth Metroplex.
-          </p>
-          <div className="hero__actions">
-            <Link href="/our-work" className="btn btn--primary">
-              Explore Our Services
-            </Link>
-            <Link href="/contact" className="btn btn--outline">
-              Free In-Home Consultation
-            </Link>
+          <div className="hero__content">
+            <p className="hero__eyebrow">{site.subTagline}</p>
+            <h1 className="hero__title">{site.tagline}</h1>
+            <p className="hero__lead">
+              Decorative yet functional window treatments — blinds, shutters, and roller
+              shades — locally manufactured for homes across the Dallas–Fort Worth Metroplex.
+            </p>
+            <div className="hero__actions">
+              <Link href="/our-work" className="btn btn--primary">
+                Explore Our Services
+              </Link>
+              <Link href="/contact" className="btn btn--outline">
+                Free In-Home Consultation
+              </Link>
+            </div>
           </div>
+
+          <aside className="hero__finance">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/photos/synchrony-home-badge.jpg"
+              alt="Synchrony HOME financing"
+              className="hero__finance-logo"
+            />
+            <p className="hero__finance-text">{financing.blurb}</p>
+            <a
+              href={financing.applyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn hero__finance-cta"
+            >
+              {financing.applyLabel}
+            </a>
+          </aside>
         </div>
       </section>
 
@@ -89,9 +108,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Financing */}
-      <FinancingBanner />
 
       {/* Who We Serve */}
       <section className="section">
