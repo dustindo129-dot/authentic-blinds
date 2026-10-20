@@ -2,7 +2,8 @@ import Link from 'next/link';
 import ServiceCard from '@/components/ServiceCard';
 import ReviewCard from '@/components/ReviewCard';
 import QuickEstimateForm from '@/components/QuickEstimateForm';
-import { site, services, whoWeServe, financing } from '@/data/site';
+import PhotoCarousel from '@/components/PhotoCarousel';
+import { site, services, financing } from '@/data/site';
 import { reviews, reviewSummary } from '@/data/reviews';
 import { serviceAreas } from '@/data/service-areas';
 
@@ -48,6 +49,8 @@ const serviceSchemas = services.map((s) => ({
   areaServed: { '@type': 'Place', name: 'Dallas–Fort Worth Metroplex' },
   url: `${site.url}/${s.slug}`,
 }));
+
+const whoWeServe = ['Homeowners', 'Builders', 'Contractors', 'Interior Designers', 'Realtors', 'Property Managers'];
 
 export default function HomePage() {
   return (
@@ -112,12 +115,10 @@ export default function HomePage() {
         <div className="container proof-bar__inner">
           <div className="proof-bar__stars">
             {'★★★★★'}
-            <span className="proof-bar__rating">
-              {reviewSummary.averageRating} / 5
-            </span>
+            <span className="proof-bar__rating">{reviewSummary.averageRating} / 5</span>
           </div>
           <span className="proof-bar__count">
-            Rated 5 stars from {reviewSummary.totalReviews}+ happy homeowners
+            {reviewSummary.totalReviews}+ verified Google reviews
           </span>
           <span className="proof-bar__sep">|</span>
           <span className="proof-bar__badge">Preferred vendor for Risland Homes</span>
@@ -129,9 +130,7 @@ export default function HomePage() {
         <div className="container estimate-section">
           <div className="estimate-section__text">
             <p className="section__eyebrow">Free, No-Obligation Quote</p>
-            <h2 className="section__title">
-              Get Your Free Estimate in 24 Hours
-            </h2>
+            <h2 className="section__title">Get Your Free Estimate in 24 Hours</h2>
             <p className="section__lead">
               Tell us about your project and we&apos;ll reach out within one business day to
               schedule your free in-home consultation. No pressure, no hidden fees.
@@ -150,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Locally Manufactured ─── */}
-      <section className="section">
+      <section className="section section--tint">
         <div className="container locally-made">
           <div className="locally-made__media">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -179,49 +178,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Intro ─── */}
-      <section className="section section--tint">
-        <div className="container intro">
-          <div className="intro__text">
-            <p className="section__eyebrow">Window Treatment Store You Can Trust</p>
+      {/* ─── Photo Gallery Slideshow ─── */}
+      <PhotoCarousel />
+
+      {/* ─── Reviews ─── */}
+      <section className="section section--tint" id="reviews">
+        <div className="container">
+          <div className="section__head">
+            <p className="section__eyebrow">What Our Customers Say</p>
             <h2 className="section__title">
-              Affordable Window Blinds &amp; Shutters in the DFW Metroplex
+              ★ {reviewSummary.averageRating} Stars — {reviewSummary.totalReviews}+ Reviews
             </h2>
-            <p>
-              Enhance your privacy at home by turning to {site.name}. We provide decorative
-              yet functional window treatments such as blinds, shutters, and roller shades
-              in the Dallas–Fort Worth Metropolitan Area and the surrounding communities.
-            </p>
-            <p>
-              Aside from improving privacy, our locally made fixtures can block or filter
-              outdoor light, regulate the temperature inside your house, and reduce your
-              energy costs. You can also be confident that our products will boost your
-              home&apos;s appearance.
-            </p>
-            <p>
-              A preferred vendor for Risland Homes, we offer durable, stylish, and
-              affordable blinds, shutters, and roller shades. With one of the fastest lead
-              times in the area, we can install them within a month of closing the deal.
+            <p className="section__lead">
+              Real feedback from homeowners across the Dallas–Fort Worth Metroplex.
             </p>
           </div>
-          <ul className="intro__highlights">
-            <li>
-              <strong>Beat Any Price</strong>
-              <span>Guaranteed in the DFW Metroplex</span>
-            </li>
-            <li>
-              <strong>Locally Made</strong>
-              <span>Fast lead times, quick installs</span>
-            </li>
-            <li>
-              <strong>Licensed &amp; Insured</strong>
-              <span>Bonded, professional crew</span>
-            </li>
-            <li>
-              <strong>Free Consultation</strong>
-              <span>In-home, no obligation</span>
-            </li>
-          </ul>
+          <div className="review-grid">
+            {reviews.slice(0, 6).map((review, i) => (
+              <ReviewCard key={i} review={review} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -244,46 +220,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Reviews ─── */}
-      <section className="section section--tint" id="reviews">
-        <div className="container">
-          <div className="section__head">
-            <p className="section__eyebrow">What Our Customers Say</p>
-            <h2 className="section__title">
-              ★ {reviewSummary.averageRating} Stars — {reviewSummary.totalReviews}+ Reviews
-            </h2>
-            <p className="section__lead">
-              Real feedback from homeowners across the Dallas–Fort Worth Metroplex.
-            </p>
-          </div>
-          <div className="review-grid">
-            {reviews.slice(0, 6).map((review, i) => (
-              <ReviewCard key={i} review={review} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Who We Serve ─── */}
-      <section className="section">
-        <div className="container">
-          <div className="section__head">
-            <p className="section__eyebrow">Who We Serve</p>
-            <h2 className="section__title">Trusted by the Community</h2>
-            <p className="section__lead">
-              You can expect our personable team to deliver excellent work for:
-            </p>
-          </div>
-          <ul className="serve-grid">
-            {whoWeServe.map((item) => (
-              <li key={item} className="serve-grid__item">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       {/* ─── Service Areas ─── */}
       <section className="section section--tint">
         <div className="container">
@@ -294,12 +230,23 @@ export default function HomePage() {
               We bring free in-home consultations and professional installation to
               communities across the Dallas–Fort Worth Metroplex.
             </p>
+            <div className="serve-tags">
+              {whoWeServe.map((item) => (
+                <span key={item} className="serve-tag">{item}</span>
+              ))}
+            </div>
           </div>
           <div className="area-grid">
             {serviceAreas.map((area) => (
               <Link key={area.slug} href={`/areas/${area.slug}`} className="area-card">
-                <strong>{area.name}</strong>
-                <span>{area.county} County</span>
+                <div className="area-card__img">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={area.image} alt={area.imageAlt} loading="lazy" />
+                </div>
+                <div className="area-card__body">
+                  <strong>{area.name}</strong>
+                  <span>{area.county} County</span>
+                </div>
               </Link>
             ))}
           </div>
@@ -329,7 +276,6 @@ export default function HomePage() {
         <div className="container cta__inner">
           <h2 className="cta__title">Ready to Transform Your Windows?</h2>
           <p className="cta__text">
-            Adorn your home with effective and aesthetically pleasing window treatments.
             Get your free estimate today — we guarantee to beat any price in DFW.
           </p>
           <div className="cta__actions">
