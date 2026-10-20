@@ -3,9 +3,14 @@ import ContactForm from '@/components/ContactForm';
 import { site } from '@/data/site';
 
 export const metadata = {
-  title: 'Contact',
-  description: `Contact ${site.name} for a free in-home consultation. Call ${site.phone} or send us a message.`,
+  title: 'Contact Us — Free In-Home Consultation',
+  description: `Contact ${site.name} for a free in-home consultation on custom blinds, shutters & shades. Call ${site.phone} or send us a message. Serving Prosper, Frisco, McKinney, Plano & all of DFW.`,
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: `Contact ${site.name}`,
+    description: `Schedule your free in-home consultation for custom window treatments. Call ${site.phone}.`,
+    url: `${site.url}/contact`,
+  },
 };
 
 export default function ContactPage() {

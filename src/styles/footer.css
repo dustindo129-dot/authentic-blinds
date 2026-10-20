@@ -83,3 +83,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+.footer__list--areas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+}
+
+.footer__list--areas a {
+  font-size: 0.88rem;
+}

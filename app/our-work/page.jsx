@@ -2,10 +2,16 @@ import Link from 'next/link';
 import { gallery, site } from '@/data/site';
 
 export const metadata = {
-  title: 'Our Work',
+  title: 'Our Work — Installation Gallery',
   description:
-    'See a selection of blinds, shutters, and roller shades installed in homes across the Dallas–Fort Worth Metroplex by Authentic Blinds & Shutters.',
+    'See blinds, plantation shutters & roller shades installed in homes across the Dallas–Fort Worth Metroplex by Authentic Blinds & Shutters. View our portfolio of custom window treatments.',
   alternates: { canonical: '/our-work' },
+  openGraph: {
+    title: 'Our Work | Authentic Blinds & Shutters',
+    description:
+      'Browse our portfolio of custom blinds, shutters & shades installed across DFW.',
+    url: 'https://authenticblindsandshutters.com/our-work',
+  },
 };
 
 export default function OurWorkPage() {

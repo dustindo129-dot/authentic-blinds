@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { nav, site } from '@/data/site';
+import { serviceAreas } from '@/data/service-areas';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -8,7 +9,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div className="footer__col">
-          <h3 className="footer__brand">{site.name}</h3>
+          <Link href="/" className="footer__brand">{site.name}</Link>
           <p className="footer__blurb">{site.subTagline}</p>
           <p className="footer__location">Serving the Dallas–Fort Worth Metroplex</p>
         </div>
@@ -23,10 +24,7 @@ export default function Footer() {
               <a href={site.emailHref}>{site.email}</a>
             </li>
           </ul>
-        </div>
-
-        <div className="footer__col">
-          <h4 className="footer__heading">Hours</h4>
+          <h4 className="footer__heading" style={{ marginTop: '20px' }}>Hours</h4>
           <ul className="footer__list">
             {site.hours.map((h) => (
               <li key={h.days}>
@@ -37,11 +35,8 @@ export default function Footer() {
         </div>
 
         <div className="footer__col">
-          <h4 className="footer__heading">Explore</h4>
+          <h4 className="footer__heading">Services</h4>
           <ul className="footer__list">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
             <li>
               <Link href="/roller-shades">Roller Shades</Link>
             </li>
@@ -57,6 +52,17 @@ export default function Footer() {
             <li>
               <Link href="/contact">Contact</Link>
             </li>
+          </ul>
+        </div>
+
+        <div className="footer__col">
+          <h4 className="footer__heading">Service Areas</h4>
+          <ul className="footer__list footer__list--areas">
+            {serviceAreas.map((area) => (
+              <li key={area.slug}>
+                <Link href={`/areas/${area.slug}`}>{area.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
