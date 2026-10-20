@@ -12,7 +12,7 @@
 .hero__inner {
   position: relative;
   z-index: 1;
-  padding: clamp(70px, 10vw, 120px) 24px;
+  padding: clamp(48px, 7vw, 84px) 24px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1.3fr 0.9fr;
@@ -286,7 +286,7 @@
 }
 
 .cta__inner {
-  padding: 72px 24px;
+  padding: 48px 24px;
   text-align: center;
   max-width: 720px;
 }
@@ -592,7 +592,7 @@
    ============================================================ */
 @media (max-width: 960px) {
   .section {
-    padding: 64px 0;
+    padding: 40px 0;
   }
   .hero__inner {
     grid-template-columns: 1fr;
