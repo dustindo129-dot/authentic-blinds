@@ -45,7 +45,7 @@ export const services = [
   {
     slug: 'roller-shades',
     title: 'Roller Shades',
-    image: '/images/photos/roller-shade-zebra.webp',
+    image: '/images/photos/gallery-roller-luxury.jpg',
     summary:
       'Sleek, modern roller shades that filter light beautifully and give any room a clean, contemporary finish.',
     intro:
@@ -100,12 +100,20 @@ export const whoWeServe = [
   'Realtors',
 ];
 
-// Our Work gallery. Replace the placeholder SVGs with real project photos.
+// Our Work gallery — real installation photos
 export const gallery = [
-  { src: '/images/photos/hero.jpg', alt: 'Plantation shutters filling a bright sunroom' },
-  { src: '/images/photos/shutters-arched.jpg', alt: 'Arched plantation shutters in a living room' },
-  { src: '/images/photos/shutters-entry.jpg', alt: 'Plantation shutter sidelights framing a front entry' },
-  { src: '/images/photos/shutters-sunroom.jpg', alt: 'Plantation shutters across a sunroom with a view' },
-  { src: '/images/photos/roller-shade-zebra.webp', alt: 'Black zebra cordless roller shade' },
-  { src: '/images/photos/blinds-faux-wood.jpg', alt: 'White faux wood window blinds' },
+  { src: '/images/photos/gallery-shutters-newbuild.jpg', alt: 'Plantation shutters across an entire wall in a new build DFW home' },
+  { src: '/images/photos/shutters-arched.jpg', alt: 'Custom arched plantation shutters with specialty top panels' },
+  { src: '/images/photos/gallery-shutters-cathedral.jpg', alt: 'Cathedral arch window plantation shutters in a living room' },
+  { src: '/images/photos/gallery-roller-luxury.jpg', alt: 'Modern roller shades in a luxury dining room' },
+  { src: '/images/photos/shutters-sunroom.jpg', alt: 'White plantation shutters filling a warm living room' },
+  { src: '/images/photos/gallery-shutters-modern.jpg', alt: 'Contemporary black-frame plantation shutters with chandelier' },
+  { src: '/images/photos/gallery-shutters-dining.jpg', alt: 'Arched plantation shutter in an elegant dining room' },
+  { src: '/images/photos/shutters-entry.jpg', alt: 'Plantation shutter sidelights framing a front entry door' },
+  { src: '/images/photos/gallery-shutters-bay.jpg', alt: 'Bay window plantation shutters on a staircase landing' },
+  { src: '/images/photos/gallery-shutters-bedroom.jpg', alt: 'Plantation shutters in a master bedroom bay window' },
+  { src: '/images/photos/gallery-zebra-installed.jpg', alt: 'Zebra roller shades installed in a bright modern home' },
+  { src: '/images/photos/gallery-zebra-triple.jpg', alt: 'Triple zebra shades covering a large living room window wall' },
+  { src: '/images/photos/blinds-faux-wood.jpg', alt: 'Faux wood stained window blinds in a living room' },
+  { src: '/images/photos/manufacturing.jpg', alt: 'Our local manufacturing facility — shutters built right here in DFW' },
 ];

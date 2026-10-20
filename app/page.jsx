@@ -149,6 +149,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Locally Manufactured ─── */}
+      <section className="section">
+        <div className="container locally-made">
+          <div className="locally-made__media">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/photos/manufacturing.jpg"
+              alt="Our local manufacturing facility in the DFW Metroplex — shutters built right here in Texas"
+              loading="lazy"
+            />
+          </div>
+          <div className="locally-made__body">
+            <p className="section__eyebrow">Made Right Here in Texas</p>
+            <h2 className="section__title">Locally Manufactured, Locally Installed</h2>
+            <p>
+              Unlike big-box retailers who ship blinds from overseas, every shutter, blind,
+              and shade we sell is manufactured right here in the DFW Metroplex. That means
+              faster lead times, tighter quality control, and a local team that stands behind
+              every product we install.
+            </p>
+            <ul className="check-list">
+              <li>Manufactured locally — not imported</li>
+              <li>3–4 week lead time (fastest in DFW)</li>
+              <li>Every order custom-measured and custom-built</li>
+              <li>Installed by our own licensed crew</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ─── Intro ─── */}
       <section className="section section--tint">
         <div className="container intro">

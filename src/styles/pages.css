@@ -708,6 +708,31 @@
 }
 
 /* ============================================================
+   Locally manufactured section
+   ============================================================ */
+.locally-made {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.locally-made__media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+@media (max-width: 960px) {
+  .locally-made {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+/* ============================================================
    Quick estimate section
    ============================================================ */
 .estimate-section {
